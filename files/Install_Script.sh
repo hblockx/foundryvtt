@@ -9,7 +9,7 @@ echo " "
 echo "Current FoundryVTT Release version is ${FVTT_VERSION}."
 
 sleep 1
-
+#test
 # Set permissions.
 mkdir -p /foundry/fvtt /foundry/data
 chown 99:100 -R /foundry
