@@ -15,7 +15,7 @@ mkdir -p /foundry/fvtt /foundry/data
 chown 99:100 -R /foundry
 chmod 776 -R /foundry
 chmod +x /foundry/
-MODULE_BACKEND_JS="/foundry/data/Data/modules/plutonium/server/${FOUNDRY_VERSION:0:3}.x/plutonium-backend.js"
+MODULE_BACKEND_JS="/foundry/data/Data/modules/plutonium/server/0.7.x/plutonium-backend.js"
 cp "${MODULE_BACKEND_JS}" "/foundry/fvtt/resources/app/"
 sed --file=- --in-place=.orig /foundry/fvtt/resources/app/main.js << SED_SCRIPT
 s/^\(require(\"init\").*\);\
